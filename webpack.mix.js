@@ -11,5 +11,18 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.disableNotifications()
+   .js('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .options({
+        postCss: [
+            require('autoprefixer')
+        ]
+      })
+  .sourceMaps(false)
+  .browserSync({
+    port: 9999,
+    files: 'public/**/*',
+    server: 'public',
+    proxy: false
+  });
