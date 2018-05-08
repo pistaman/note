@@ -15,8 +15,27 @@
 //     return view('welcome');
 // });
 
-// Route::get('/test','TestController@test');
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+
+//詳細画面
+Route::get('item/{post_id}','ItemController@showDetail')->name('draft');
+
+//新規投稿用
+// Route::post('draft/new', function(Request $request) {
+//   return view('newdraft');
+// });
+
+//this is a test
+
+// Route::get('/aiu',function(){
+//   $users = App\User::find(1);
+//   $postdesu = $users->posts;
+//   foreach($postdesu as $post)
+//   {
+//     echo $post->content;
+//   }
+//
+//   return;
+// });

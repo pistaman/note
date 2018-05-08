@@ -7,3 +7,19 @@
 
 // Bootstrap
  //@import '~bootstrap/scss/bootstrap';
+
+.main__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  margin-top: 20px;
+  display: flex;
+  &__side {
+    width: 10%;
+  }
+  &__lists {
+    width: 90%;
+  }
+}

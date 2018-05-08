@@ -258,6 +258,10 @@ body {
   color: #555;
 }
 
+a {
+  text-decoration: none;
+}
+
 .register_container {
   max-width: 1200px;
   width: 400px;

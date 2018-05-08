@@ -16,6 +16,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -29,7 +30,6 @@
         <li><a href="/" class="global__logo">LOGO</a></li>
         @else
         <li><a href="/" class="global__logo">LOGO</a></li>
-        <li><a href="/" class="global__home">HOME</a></li>
         @endguest
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -38,6 +38,7 @@
               <li><a class="navbar-link" href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
               <li><a class="navbar-link" href="{{ route('register') }}">{{ __('新規登録') }}</a></li>
           @else
+              <li class = "nav-item fas"><a href="/draft/new"><i class="far fa-edit fa-fw"></i><p>投稿する</p></a></li>
               <li class="nav-item dropdown">
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                       {{ Auth::user()->name }} <span class="caret"></span>
@@ -47,7 +48,7 @@
                       <a class="dropdown-item" href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
-                          {{ __('Logout') }}
+                          {{ __('ログアウト') }}
                       </a>
 
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -59,9 +60,8 @@
       </ul>
     </nav>
   </header>
-
-    <main class="main">
-        @yield('content')
-    </main>
+  <div class="main">
+    @yield('content')
+  </div>
 </body>
 </html>
