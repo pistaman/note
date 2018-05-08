@@ -1,0 +1,41 @@
+.navbar {
+  &-nav {
+    display: flex;
+    & li:first-child{
+        margin-right: 30px;
+      }
+    }
+  &-link:hover {
+    opacity: 0.3;
+  }
+}
+
+.global {
+  &__header{
+    height: 50px;
+    background-color: $base-color;
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &__nav {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--main {
+      display: flex;
+    }
+  }
+  &__logo {
+    margin-right: 30px;
+  }
+  &__home {
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

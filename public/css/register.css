@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);html {
+html {
   line-height: 1;
   overflow-y: scroll;
 }
@@ -258,56 +258,75 @@ body {
   color: #555;
 }
 
-.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar-nav li:first-child {
-  margin-right: 30px;
-}
-
-.navbar-link:hover {
-  opacity: 0.3;
-}
-
-.global__header {
-  height: 50px;
-  background-color: #5DA797;
-}
-
-.global__header a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.global__nav {
+.register_container {
   max-width: 1200px;
-  height: 100%;
-  margin: 0 20px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 50px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.8em;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.col-md-6 {
+  margin-top: 30px;
+}
+
+.col-md-6 input {
+  min-width: 13.375em;
+  font-size: 14px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 1em 1.3em;
+}
+
+.col-md-6 input:focus {
+  border: 2px solid #c8c8c8;
+}
+
+.col-md-6 button {
+  color: #fff;
+  background-color: #5DA797;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 14px 110px;
+  -webkit-box-shadow: 2px 2px 4px #dadada;
+          box-shadow: 2px 2px 4px #dadada;
+  cursor: pointer;
+}
+
+.col-md-6 button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.col-md-6.offset-md-4 {
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.global__nav--main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.col-md-6.offset-md-4 .btn-link {
+  color: #555;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
-.global__logo {
-  margin-right: 30px;
-}
-
-.global__home:hover {
-  opacity: 0.3;
+.col-md-6.offset-md-4 .btn-link:hover {
+  color: #5DA797;
 }
 

@@ -19,16 +19,24 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/register.css') }}" rel="stylesheet">
 </head>
 <body>
   <header class="global__header">
-    <nav>
-      <a href="#" class="logo">LOGO</a>
+    <nav class="global__nav">
+      <ul class="global__nav--main">
+        @guest
+        <li><a href="/" class="global__logo">LOGO</a></li>
+        @else
+        <li><a href="/" class="global__logo">LOGO</a></li>
+        <li><a href="/" class="global__home">HOME</a></li>
+        @endguest
+      </ul>
       <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->
           @guest
-              <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-              <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+              <li><a class="navbar-link" href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
+              <li><a class="navbar-link" href="{{ route('register') }}">{{ __('新規登録') }}</a></li>
           @else
               <li class="nav-item dropdown">
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

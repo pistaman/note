@@ -1,3 +1,7 @@
+@import "./frames/reset";
+@import "./frames/base";
+
 body{
   background-color: rgba(0,0,0,.02);
+  color: $base-black;
 }

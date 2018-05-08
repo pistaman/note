@@ -2,17 +2,8 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-@import "frames/*";
+@import "./frames/common";
+@import "./components/header";
 
 // Bootstrap
- @import '~bootstrap/scss/bootstrap';
-
-
-.global__header{
-  height: 50px;
-  background-color: $base-color;
-  & a{
-    text-decoration: none;
-    color: white;
-  }
-}
+ //@import '~bootstrap/scss/bootstrap';
