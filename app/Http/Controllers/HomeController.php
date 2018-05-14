@@ -26,7 +26,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('updated_at','asc')->get();
+        $user_id = \Auth::id();
+        // $test1 = Post::where('user_id','=',$user_id)->first();
+        // $test2 = Post::with('user')->where('user_id','=',$user_id)->first();
+        // echo"<pre>";
+        // print_r($test1->toArray());
+        // print_r($test2->toArray());
+        // echo"<pre>";
+        // die;
+        $posts = Post::where('user_id','=',$user_id)->get();
         return view('home',compact('posts'));
     }
 }

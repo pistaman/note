@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
+@guest
+@else
 <div class="main__container">
   <div class="top">
     <nav class="top__side">
@@ -28,4 +29,5 @@
     </div>
   </div>
 </div>
+@endguest
 @endsection

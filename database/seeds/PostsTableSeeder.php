@@ -15,7 +15,7 @@ class PostsTableSeeder extends Seeder
       for ($i=1; $i < 10; $i++) {
         $posts = new Post;
         $posts->title = 'タイトルだよ'.$i;
-        $posts->user_id = 1;
+        $posts->user_id = 2;
         $posts->content = 'これはテストです。表示がどのようにされるかを確認したいためシーダーなるものを使いこのようにテストを行っているのです。';
         $posts->save();
       }

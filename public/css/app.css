@@ -361,13 +361,27 @@ a {
   width: 10%;
 }
 
+.top__side li {
+  margin-top: 10px;
+}
+
+.top__side li a {
+  color: #555;
+}
+
+.top__side li a:hover {
+  color: #5DA797;
+}
+
 .top__lists {
   width: 90%;
+  margin-left: 20px;
 }
 
 .top__lists--title {
   font-size: 22px;
   font-weight: bold;
+  letter-spacing: 0.5px;
   margin: 10px 0 20px 0;
 }
 
@@ -375,7 +389,7 @@ a {
   width: 80%;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: -1px;
 }
 
 .top__list--link {
@@ -385,6 +399,10 @@ a {
 .top__list h3 {
   color: #555;
   margin-left: 10px;
+}
+
+.top__list h3:hover {
+  color: #5DA797;
 }
 
 .top__list--time {

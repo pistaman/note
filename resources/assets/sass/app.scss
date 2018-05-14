@@ -18,12 +18,23 @@
   display: flex;
   &__side {
     width: 10%;
+    & li {
+      margin-top: 10px;
+      & a {
+        color: $base-black;
+        &:hover {
+          color: $base-color;
+        }
+      }
+    }
   }
   &__lists {
     width: 90%;
+    margin-left: 20px;
     &--title {
       font-size: 22px;
       font-weight: bold;
+      letter-spacing: 0.5px;
       margin: 10px 0 20px 0;
     }
   }
@@ -31,13 +42,16 @@
     width: 80%;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+    margin-bottom: -1px;
     &--link {
       padding: 20px 10px;
     }
     & h3 {
       color: $base-black;
       margin-left: 10px;
+      &:hover {
+        color: $base-color;
+      }
     }
     &--time {
       color: rgba(0,0,0,0.4);

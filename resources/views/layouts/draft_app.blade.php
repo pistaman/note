@@ -26,11 +26,7 @@
   <header class="global__header">
     <nav class="global__nav">
       <ul class="global__nav--main">
-        @guest
         <li><a href="/" class="global__logo">LOGO</a></li>
-        @else
-        <li><a href="/" class="global__logo">LOGO</a></li>
-        @endguest
       </ul>
       <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->
