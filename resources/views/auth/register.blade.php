@@ -13,9 +13,9 @@
                         <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" placeholder="名前" required autofocus>
 
                         @if ($errors->has('name'))
-                            <span class="invalid-feedback">
+                            <p class="invalid-feedback">
                                 <strong>{{ $errors->first('name') }}</strong>
-                            </span>
+                            </p>
                         @endif
                     </div>
                 </div>
@@ -37,10 +37,16 @@
                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="{{ old('','パスワード')}}" required>
 
                         @if ($errors->has('password'))
-                            <span class="invalid-feedback">
+                            <p class="invalid-feedback">
                                 <strong>{{ $errors->first('password') }}</strong>
-                            </span>
+                            </p>
                         @endif
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="{{ old('','パスワード（確認）') }}" required>
                     </div>
                 </div>
 

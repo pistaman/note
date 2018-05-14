@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
+use DB;
 
-class itemController extends Controller
+class ItemController extends Controller
 {
-  public function showDetail(){
-      return view('draft');
+  public function showDetail($id)
+  {
+      $posts = Post::find($id);
+      return view('draft',compact('posts'));
   }
   public function createItem()
   {

@@ -1,5 +1,6 @@
 <?php
-
+use App\Models\Post;
+use App\Models\Comment;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,24 +12,21 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
 //詳細画面
-Route::get('item/{post_id}','ItemController@showDetail')->name('draft');
+Route::get('draft/{id}','ItemController@showDetail')->name('draft');
 
 //新規投稿用
 // Route::post('draft/new', function(Request $request) {
 //   return view('newdraft');
 // });
 
-//this is a test
 
+//this is a test
 // Route::get('/aiu',function(){
 //   $users = App\User::find(1);
 //   $postdesu = $users->posts;
