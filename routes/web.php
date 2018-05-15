@@ -15,16 +15,16 @@ use App\Models\Comment;
 
 Auth::routes();
 
+//一覧ページ
 Route::get('/', 'HomeController@index')->name('home');
 
-//詳細画面
-Route::get('draft/{id}','ItemController@showDetail')->name('draft');
+//記事作成
+Route::get('draft','ItemController@create')->name('draft');
+Route::post('draft','ItemController@store');
 
-//新規投稿用
-// Route::post('draft/new', function(Request $request) {
-//   return view('newdraft');
-// });
-
+//記事修正
+// Route::get();
+// Route::post();
 
 //this is a test
 // Route::get('/aiu',function(){

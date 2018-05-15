@@ -28,13 +28,13 @@ class HomeController extends Controller
     {
         $user_id = \Auth::id();
         // $test1 = Post::where('user_id','=',$user_id)->first();
-        // $test2 = Post::with('user')->where('user_id','=',$user_id)->first();
+        // $test2 = Post::with('users')->where('user_id','=',$user_id)->first();
         // echo"<pre>";
         // print_r($test1->toArray());
         // print_r($test2->toArray());
         // echo"<pre>";
-        // die;
-        $posts = Post::where('user_id','=',$user_id)->get();
+        //die;
+        $posts = Post::where('user_id','=',$user_id)->latest('updated_at')->get();
         return view('home',compact('posts'));
     }
 }
