@@ -1,0 +1,32 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+@import "./frames/common";
+@import "./components/header";
+
+// Bootstrap
+ //@import '~bootstrap/scss/bootstrap';
+
+.post {
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  &__errors {
+    width: 30%;
+    & ul {
+      border: 1px solid rgba(187, 0, 0, 0.1);
+      border-radius: 4px;
+      margin: 20px 0;
+      padding: 20px 0;
+      background-color: rgba(187, 0, 0, 0.1);
+      & li {
+        color: #BB0000;
+        margin-left: 10px;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,373 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);html {
+  line-height: 1;
+  overflow-y: scroll;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html,
+body,
+div,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  outline: 0;
+  font-weight: 400;
+  font-variant: normal;
+  background: 0 0;
+}
+
+body {
+  cursor: default;
+  line-height: 1;
+  text-rendering: optimizelegibility;
+}
+
+table,
+tr,
+th,
+td {
+  border: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-nav li:first-child {
+  margin-right: 30px;
+}
+
+.navbar-link:hover {
+  opacity: 0.3;
+}
+
+.nav-item.fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 12px;
+  border: 1.5px solid #fff;
+  border-radius: 4px;
+}
+
+.nav-item.fas a {
+  display: inline-block;
+}
+
+.nav-item.fas p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.nav-item.fas:hover {
+  opacity: 0.8;
+}
+
+.nav-item.fas.fa-edit {
+  margin-right: 5px;
+}
+
+.global__header {
+  height: 50px;
+  background-color: #5DA797;
+}
+
+.global__header a {
+  color: #fff;
+}
+
+.global__nav {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.global__nav--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.global__logo {
+  margin-right: 30px;
+}
+
+.global__home:hover {
+  opacity: 0.3;
+}
+
+.post__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.post__errors {
+  width: 30%;
+}
+
+.post__errors ul {
+  border: 1px solid rgba(187, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 20px 0;
+  background-color: rgba(187, 0, 0, 0.1);
+}
+
+.post__errors ul li {
+  color: #BB0000;
+  margin-left: 10px;
+}
+
+.post__errors ul li:first-child {
+  margin-bottom: 10px;
+}
+
