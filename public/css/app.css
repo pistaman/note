@@ -341,6 +341,10 @@ a {
   margin-right: 30px;
 }
 
+.global__logo span {
+  margin-left: 10px;
+}
+
 .global__home:hover {
   opacity: 0.3;
 }

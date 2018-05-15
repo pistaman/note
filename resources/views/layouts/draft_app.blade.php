@@ -27,7 +27,7 @@
   <header class="global__header">
     <nav class="global__nav">
       <ul class="global__nav--main">
-        <li><a href="/" class="global__logo">LOGO</a></li>
+        <li><a href="/" class="global__logo"><i class="fas fa-arrow-circle-left"></i><span>戻る</span></a></li>
       </ul>
       <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->

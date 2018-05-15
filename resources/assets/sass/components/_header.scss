@@ -52,6 +52,9 @@
   }
   &__logo {
     margin-right: 30px;
+    & span {
+      margin-left: 10px;
+    }
   }
   &__home {
     &:hover {
