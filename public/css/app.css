@@ -378,7 +378,7 @@ a {
 }
 
 .top__lists {
-  width: 90%;
+  width: 80%;
   margin-left: 20px;
 }
 
@@ -393,15 +393,14 @@ a {
   width: 80%;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
   margin-bottom: -1px;
-}
-
-.top__list--link {
-  padding: 20px 10px;
+  position: relative;
 }
 
 .top__list h3 {
   color: #555;
+  font-weight: bold;
   margin-left: 10px;
 }
 
@@ -414,5 +413,33 @@ a {
   font-size: 12px;
   margin-top: 10px;
   margin-left: 10px;
+  display: inline-block;
+}
+
+.top__list:hover > ul > .top__button {
+  display: block;
+}
+
+.top__button {
+  color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 35px;
+  display: none;
+}
+
+.top__button:hover {
+  color: #555;
+}
+
+.top__button.share {
+  right: 60px;
+}
+
+.top__button.tag {
+  right: 32px;
+}
+
+.top__button.delete {
+  right: 10px;
 }
 

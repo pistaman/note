@@ -29,7 +29,7 @@
     }
   }
   &__lists {
-    width: 90%;
+    width: 80%;
     margin-left: 20px;
     &--title {
       font-size: 22px;
@@ -42,12 +42,14 @@
     width: 80%;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 0;
     margin-bottom: -1px;
+    position: relative;
     &--link {
-      padding: 20px 10px;
     }
     & h3 {
       color: $base-black;
+      font-weight: bold;
       margin-left: 10px;
       &:hover {
         color: $base-color;
@@ -58,6 +60,28 @@
       font-size: 12px;
       margin-top: 10px;
       margin-left: 10px;
+      display: inline-block;
+    }
+    &:hover > ul > .top__button {
+      display: block;
+    }
+  }
+  &__button {
+    color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 35px;
+    display: none;
+    &:hover {
+      color: $base-black;
+    }
+    &.share {
+      right: 60px;
+    }
+    &.tag {
+      right: 32px;
+    }
+    &.delete {
+      right: 10px;
     }
   }
 }

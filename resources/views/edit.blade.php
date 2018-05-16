@@ -13,7 +13,7 @@
   </div>
   @endif
   <form class="" action="/edit/{{ $post->id }}" method="post">
-    <input type="hidden" name="_token" value="{{csrf_token()}}">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-group">
       <input type="text" name="title" placeholder="タイトル" value="{{ $post->title }}">
     </div>
