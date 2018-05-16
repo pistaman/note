@@ -442,16 +442,23 @@ a {
 
 .top__button.delete {
   right: 10px;
-  top: 34px;
 }
 
-.top__button button {
+.top__button--link {
   color: rgba(0, 0, 0, 0.4);
-  padding: 0;
-  cursor: pointer;
 }
 
-.top__button button:hover {
+.top__button--link:hover {
   color: #555;
+}
+
+#session__message {
+  width: 50%;
+  background-color: #dff0d8;
+  color: #3c763d;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
 }
 

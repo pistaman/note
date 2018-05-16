@@ -11,6 +11,7 @@
   &__container {
     max-width: 1200px;
     margin: auto;
+    font-family: arial, helvetica, clean, sans-serif;
   }
   &__errors {
     width: 30%;
@@ -24,6 +25,42 @@
         font-size: 14px;
         margin: 10px 0 10px 10px;
       }
+    }
+  }
+}
+
+#post__edit {
+  &--title {
+    width: 70%;
+    height: 2em;
+    color: $base-black;
+    font-size: 14px;
+    margin: 10px 0;
+    padding-left: 5px;
+    border: 0.2px solid rgba(0,0,0,0.4);
+    border-radius: 4px;
+    box-shadow:0px 0px 2px 1px #bcc3c9 inset;
+    &:focus {
+      box-shadow:0px 0px 6px 1px #2076c4;
+    }
+  }
+  &--content {
+    width: 70%;
+    min-height: 600px;
+    color: $base-black;
+    font-size: 14px;
+    margin: 10px 0;
+    padding-left: 5px;
+    border: 0.2px solid rgba(0,0,0,0.4);
+    border-radius: 4px;
+    box-shadow:0px 0px 2px 1px #bcc3c9 inset;
+    &:focus {
+      box-shadow:0px 0px 6px 1px #2076c4;
+    }
+  }
+  &--submit {
+    &:focus {
+      box-shadow:0px 0px 6px 1px #2076c4;
     }
   }
 }

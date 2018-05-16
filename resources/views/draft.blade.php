@@ -13,18 +13,18 @@
   </div>
   @endif
   @if(Session::has('message'))
-    <span class="session__message">{{ Session::get('message') }}</span>
+    <p id="session__message">{{ Session::get('message') }}</p>
   @endif
   <form class="" action="/draft" method="post">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-group">
-      <input type="text" name="title" placeholder="タイトル" value="{{ old('title') }}">
+      <input id="post__edit--title" type="text" name="title" placeholder="タイトル" value="{{ old('title') }}">
     </div>
     <div class="form-group">
-      <textarea type="text" name="content" rows="3" value="{{ old('content') }}"></textarea>
+      <textarea id="post__edti--content" type="text" name="content" rows="3" value="{{ old('content') }}"></textarea>
     </div>
     <div class="form-group">
-      <button type="submit" name="btn btn-primary">保存</button>
+      <button id="post__edit--submit" type="submit" name="btn btn-primary">保存</button>
     </div>
   </form>
 </div>
