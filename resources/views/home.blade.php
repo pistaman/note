@@ -15,7 +15,7 @@
     <div class="top__lists">
       <h2 class="top__lists--title"><i class="far fa-file-alt"></i> Notes</h2>
       @if(Session::has('message'))
-	    <span class="session__message">{{ Session::get('message') }}</span>
+	    <p id="session__message">{{ Session::get('message') }}</p>
       @endif
       @foreach($posts as $post)
       <div class="top__list">
@@ -31,10 +31,10 @@
           <li class="top__button share"><p><i class="fas fa-share-alt" aria-hidden="true"></i></p></li>
           <li class="top__button tag"><p><i class="fas fa-tag" aria-hidden="true"></i></p></li>
           <li class="top__button delete">
-            <form class="" action="/destroy/{{ $post->id }}" method="post">
+            <form class="" action="/destroy/{{ $post->id }}" method="post" id="form_{{ $post->id }}">
                 {{ csrf_field() }}
                 {{ method_field('delete') }}
-                <button type="submit"><i class="fas fa-trash fa-lg" aria-hidden="true"></i></button>
+                <a href="#" class="top__button--link" data-id="{{ $post->id }}" onclick="deletePost(this);"><i class="fas fa-trash" aria-hidden="true"></i></a>
             </form>
           </li>
         </ul>
