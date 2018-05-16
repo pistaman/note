@@ -31,7 +31,7 @@
     border-radius: 4px;
     padding: 1em 1.3em;
     &:focus {
-      border: 2px solid #c8c8c8;
+      box-shadow:0px 0px 6px 1px #2076c4;
     }
   }
   & button {
@@ -44,6 +44,9 @@
     cursor: pointer;
     &:hover {
       box-shadow: none;
+    }
+    &:focus {
+      box-shadow:0px 0px 6px 1px #2076c4;
     }
   }
   &.offset-md-4 {
