@@ -37,4 +37,9 @@ class HomeController extends Controller
         $posts = Post::where('user_id','=',$user_id)->latest('updated_at')->get();
         return view('home',compact('posts'));
     }
+    public function destroy($id) {
+         $post = Post::findOrFail($id);
+         $post->delete();
+         return redirect('/')->with('message','削除しました。');
+    }
 }

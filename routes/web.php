@@ -27,7 +27,7 @@ Route::get('edit/{id}', 'ItemController@edit');
 Route::post('edit/{id}', 'ItemController@update');
 
 //記事削除
-Route::delete('/','HomeController@destroy');
+Route::delete('/destroy/{id}','HomeController@destroy');
 
 //this is a test
 // Route::get('/aiu',function(){

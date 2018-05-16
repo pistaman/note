@@ -12,6 +12,9 @@
     </ul>
   </div>
   @endif
+  @if(Session::has('message'))
+    <span class="session__message">{{ Session::get('message') }}</span>
+  @endif
   <form class="" action="/draft" method="post">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-group">

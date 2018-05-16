@@ -27,7 +27,17 @@
           <p class="top__list--time">編集日　{{ date("Y年 m月 d日",strtotime($post->updated_at)) }}</p>
           @endif
         </a>
-        <p class="top__delete"><i class="fas fa-trash-alt"></i></p>
+        <ul class="top__buttons">
+          <li class="top__button share"><p><i class="fas fa-share-alt" aria-hidden="true"></i></p></li>
+          <li class="top__button tag"><p><i class="fas fa-tag" aria-hidden="true"></i></p></li>
+          <li class="top__button delete">
+            <form class="" action="/destroy/{{ $post->id }}" method="post">
+                {{ csrf_field() }}
+                {{ method_field('delete') }}
+                <button type="submit"><i class="fas fa-trash fa-lg" aria-hidden="true"></i></button>
+            </form>
+          </li>
+        </ul>
       </div>
       @endforeach
     </div>

@@ -60,6 +60,6 @@ class ItemController extends Controller
       $post->content = $request->content;
       $post->user_id = $user_id;
       $post->save();
-      return redirect()->back();
+      return redirect()->back()->with('message', '保存しました。');
   }
 }

@@ -64,6 +64,7 @@
     }
     &:hover > ul > .top__button {
       display: block;
+      cursor: pointer;
     }
   }
   &__button {
@@ -82,6 +83,15 @@
     }
     &.delete {
       right: 10px;
+      top: 34px;
+    }
+    & button {
+      color: rgba(0, 0, 0, 0.4);
+      padding: 0;
+      cursor: pointer;
+      &:hover {
+        color: $base-black;
+      }
     }
   }
 }
