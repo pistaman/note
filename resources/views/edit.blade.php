@@ -12,13 +12,13 @@
     </ul>
   </div>
   @endif
-  <form class="" action="/draft" method="post">
+  <form class="" action="/edit/{{ $post->id }}" method="post">
     <input type="hidden" name="_token" value="{{csrf_token()}}">
     <div class="form-group">
-      <input type="text" name="title" placeholder="タイトル" value="{{ old('title') }}">
+      <input type="text" name="title" placeholder="タイトル" value="{{ $post->title }}">
     </div>
     <div class="form-group">
-      <textarea type="text" name="content" rows="3" value="{{ old('content') }}"></textarea>
+      <textarea type="text" name="content" rows="3">{{ $post->content }}</textarea>
     </div>
     <div class="form-group">
       <button type="submit" name="btn btn-primary">保存</button>

@@ -16,15 +16,18 @@ use App\Models\Comment;
 Auth::routes();
 
 //一覧ページ
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 
 //記事作成
-Route::get('draft','ItemController@create')->name('draft');
+Route::get('draft','ItemController@create');
 Route::post('draft','ItemController@store');
 
 //記事修正
-// Route::get();
-// Route::post();
+Route::get('edit/{id}', 'ItemController@edit');
+Route::post('edit/{id}', 'ItemController@update');
+
+//記事削除
+Route::delete('/','HomeController@destroy');
 
 //this is a test
 // Route::get('/aiu',function(){

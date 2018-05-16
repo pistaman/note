@@ -14,16 +14,20 @@
     </nav>
     <div class="top__lists">
       <h2 class="top__lists--title"><i class="far fa-file-alt"></i> Notes</h2>
+      @if(Session::has('message'))
+	    <span class="session__message">{{ Session::get('message') }}</span>
+      @endif
       @foreach($posts as $post)
       <div class="top__list">
-        <a href="/draft/{{ $post->id }}" class="top__list--link">
+        <a href="/edit/{{ $post->id }}" class="top__list--link">
           <h3>{{ $post->title }}</h3>
           @if($post->created_at == $post->updated_at)
-          <p class="top__list--time">投稿日　{{ $post->created_at }}</p>
+          <p class="top__list--time">投稿日　{{ date("Y年 m月 d日",strtotime($post->created_at)) }}</p>
           @else
-          <p class="top__list--time">編集日　{{ $post->updated_at }}</p>
+          <p class="top__list--time">編集日　{{ date("Y年 m月 d日",strtotime($post->updated_at)) }}</p>
           @endif
         </a>
+        <p class="top__delete"><i class="fas fa-trash-alt"></i></p>
       </div>
       @endforeach
     </div>
