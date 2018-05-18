@@ -11,8 +11,13 @@
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import Vue from 'vue'
+
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '.top__side',
+    data: {
+      message: 'hoge'
+    }
 });
