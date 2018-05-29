@@ -25,9 +25,9 @@
                         <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="メールアドレス" required>
 
                         @if ($errors->has('email'))
-                            <span class="invalid-feedback">
+                            <p class="invalid-feedback">
                                 <strong>{{ $errors->first('email') }}</strong>
-                            </span>
+                            </p>
                         @endif
                     </div>
                 </div>
