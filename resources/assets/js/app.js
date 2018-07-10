@@ -16,8 +16,11 @@ import Vue from 'vue'
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '.top__side',
+    el: '.main__container',
     data: {
       message: 'hoge'
+    },
+    components: {
+      app:ExampleComponent,
     }
-});
+})
