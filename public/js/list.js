@@ -5,8 +5,3 @@ function deletePost(e){
     document.getElementById('form_' + e.dataset.id).submit();
   }
 };
-
-
-$(document).ready(function(){
-  $("#session__message").fadeOut(3000);
-});
