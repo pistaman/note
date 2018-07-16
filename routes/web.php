@@ -28,3 +28,6 @@ Route::post('edit/{id}', 'PostsController@update');
 
 //記事削除
 Route::delete('/destroy/{id}','PostsController@destroy');
+
+//コメント機能
+Route::post('/edit/{id}/comment','CommentsController@store');

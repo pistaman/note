@@ -55,7 +55,7 @@ class PostsController extends Controller
         $posts->user_id = $user_id;
         $posts->save();
 
-        return redirect()->action("HomeController@index")->with('message','保存が完了しました。');
+        return redirect()->action("PostsController@index")->with('message','保存が完了しました。');
     }
 
     public function edit (Request $request,$id)

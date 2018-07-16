@@ -59,6 +59,18 @@
     </nav>
   </header>
   <div class="main">
+    @if(Session::has('message'))
+      <p id="session__message">{{ Session::get('message') }}</p>
+    @endif
+    @if ($errors->any())
+      <div class="post__errors">
+          <ul>
+              @foreach($errors->all() as $error)
+              <li>{{ $error }}</li>
+              @endforeach
+          </ul>
+      </div>
+      @endif
     @yield('content')
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

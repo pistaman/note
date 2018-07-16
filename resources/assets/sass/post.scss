@@ -29,6 +29,10 @@
       }
     }
   }
+  &__comment {
+    width: 28%;
+    margin-top: 58px;
+  }
 }
 
 #post__edit {
@@ -93,13 +97,7 @@
     display: flex;
   }
   &-comment {
-    width: 30%;
-    height: 100%;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
   }
   &-post {
     width: 70%;
@@ -108,7 +106,6 @@
     text-align: end;
   }
   &-item {
-    width: 80%;
     & p {
       text-align: end;
     }
