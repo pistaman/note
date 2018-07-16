@@ -16,27 +16,15 @@ use App\Models\Comment;
 Auth::routes();
 
 //一覧ページ
-Route::get('/', 'HomeController@index');
+Route::get('/', 'PostsController@index');
 
 //記事作成
-Route::get('draft','ItemController@create');
-Route::post('draft','ItemController@store');
+Route::get('draft','PostsController@create');
+Route::post('draft','PostsController@store');
 
 //記事修正
-Route::get('edit/{id}', 'ItemController@edit');
-Route::post('edit/{id}', 'ItemController@update');
+Route::get('edit/{id}', 'PostsController@edit');
+Route::post('edit/{id}', 'PostsController@update');
 
 //記事削除
-Route::delete('/destroy/{id}','HomeController@destroy');
-
-//this is a test
-// Route::get('/aiu',function(){
-//   $users = App\User::find(1);
-//   $postdesu = $users->posts;
-//   foreach($postdesu as $post)
-//   {
-//     echo $post->content;
-//   }
-//
-//   return;
-// });
+Route::delete('/destroy/{id}','PostsController@destroy');
