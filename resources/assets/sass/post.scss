@@ -9,9 +9,11 @@
 
 .post {
   &__container {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1040px;
     font-family: arial, helvetica, clean, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
   &__errors {
     width: 30%;
@@ -31,7 +33,7 @@
 
 #post__edit {
   &--title {
-    width: 70%;
+    width: 100%;
     height: 2em;
     color: $base-black;
     font-size: 14px;
@@ -45,11 +47,25 @@
     }
   }
   &--content {
-    width: 70%;
+    width: 100%;
     min-height: 600px;
     color: $base-black;
     font-size: 14px;
     margin: 10px 0;
+    padding: 4px 8px;
+    border: 0.2px solid rgba(0,0,0,0.4);
+    border-radius: 4px;
+    box-shadow:0px 0px 2px 1px #bcc3c9 inset;
+    &:focus {
+      box-shadow:0px 0px 6px 1px #2076c4;
+    }
+  }
+  &--comment {
+    width: 90%;
+    height: 100%;
+    color: $base-black;
+    font-size: 14px;
+    margin: 10px;
     padding: 4px 8px;
     border: 0.2px solid rgba(0,0,0,0.4);
     border-radius: 4px;
@@ -72,7 +88,29 @@
   }
 }
 
-.form-group.submit {
-  width: 70%;
-  text-align: end;
+.form-group {
+  &-body {
+    display: flex;
+  }
+  &-comment {
+    width: 30%;
+    height: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-post {
+    width: 70%;
+  }
+  &-submit {
+    text-align: end;
+  }
+  &-item {
+    width: 80%;
+    & p {
+      text-align: end;
+    }
+  }
 }

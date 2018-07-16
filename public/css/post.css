@@ -350,9 +350,15 @@ a {
 }
 
 .post__container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1040px;
   font-family: arial, helvetica, clean, sans-serif;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .post__errors {
@@ -373,7 +379,7 @@ a {
 }
 
 #post__edit--title {
-  width: 70%;
+  width: 100%;
   height: 2em;
   color: #555;
   font-size: 14px;
@@ -391,7 +397,7 @@ a {
 }
 
 #post__edit--content {
-  width: 70%;
+  width: 100%;
   min-height: 600px;
   color: #555;
   font-size: 14px;
@@ -404,6 +410,24 @@ a {
 }
 
 #post__edit--content:focus {
+  -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
+          box-shadow: 0px 0px 6px 1px #2076c4;
+}
+
+#post__edit--comment {
+  width: 90%;
+  height: 100%;
+  color: #555;
+  font-size: 14px;
+  margin: 10px;
+  padding: 4px 8px;
+  border: 0.2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
+          box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
+}
+
+#post__edit--comment:focus {
   -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
           box-shadow: 0px 0px 6px 1px #2076c4;
 }
@@ -423,8 +447,44 @@ a {
           box-shadow: 0px 0px 6px 1px #2076c4;
 }
 
-.form-group.submit {
+.form-group-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-group-comment {
+  width: 30%;
+  height: 100%;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-group-post {
   width: 70%;
+}
+
+.form-group-submit {
+  text-align: end;
+}
+
+.form-group-item {
+  width: 80%;
+}
+
+.form-group-item p {
   text-align: end;
 }
 

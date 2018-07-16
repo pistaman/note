@@ -16,6 +16,7 @@
     <p id="session__message">{{ Session::get('message') }}</p>
   @endif
   @include('posts.form_edit')
+  @include('posts.form_comment')
 </div>
 
 
