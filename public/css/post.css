@@ -349,6 +349,11 @@ a {
   opacity: 0.3;
 }
 
+.main {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
 .post__container {
   max-width: 1040px;
   font-family: arial, helvetica, clean, sans-serif;

@@ -4,7 +4,7 @@
             <textarea id="post__edit--comment" type="text" name="comment" rows="3">{{ $comment->content }}</textarea>
         </div>
     @endforeach
-    <form class="form-group-comment" action="/edit/{{ $post->id }}" method="post">
+    <form class="form-group-comment" action="/edit/{{ $post->id }}/comment" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <div class="form-group-item">
               <textarea id="post__edit--comment" type="text" name="comment" rows="3">{{ old('content') }}</textarea>
