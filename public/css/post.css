@@ -388,7 +388,7 @@ a {
   margin-top: 58px;
 }
 
-#post__edit--title {
+.post__edit--title {
   width: 100%;
   height: 2em;
   color: #555;
@@ -401,12 +401,12 @@ a {
           box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
 }
 
-#post__edit--title:focus {
+.post__edit--title:focus {
   -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
           box-shadow: 0px 0px 6px 1px #2076c4;
 }
 
-#post__edit--content {
+.post__edit--content {
   width: 100%;
   min-height: 600px;
   color: #555;
@@ -419,12 +419,12 @@ a {
           box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
 }
 
-#post__edit--content:focus {
+.post__edit--content:focus {
   -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
           box-shadow: 0px 0px 6px 1px #2076c4;
 }
 
-#post__edit--comment {
+.post__edit--comment {
   width: 90%;
   height: 100%;
   color: #555;
@@ -437,12 +437,12 @@ a {
           box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
 }
 
-#post__edit--comment:focus {
+.post__edit--comment:focus {
   -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
           box-shadow: 0px 0px 6px 1px #2076c4;
 }
 
-#post__edit--submit {
+.post__edit--submit {
   color: #fff;
   background-color: #5DA797;
   font-size: 14px;
@@ -452,7 +452,7 @@ a {
   cursor: pointer;
 }
 
-#post__edit--submit:focus {
+.post__edit--submit:focus {
   -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
           box-shadow: 0px 0px 6px 1px #2076c4;
 }
