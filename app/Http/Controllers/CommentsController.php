@@ -19,14 +19,14 @@ class CommentsController extends Controller
           'content' => 'required'
         ], $message);
         if ($validator->fails()) {
-          return redirect()->back()->withErrors($validator)->withInput();
+            return redirect()->back()->withErrors($validator)->withInput();
         }
-        $user_id = \Auth::id();
         $comments = new Comment;
         $comments->content = $request->content;
-        $comments->user_id = $user_id;
+        $comments->user_id = $request->user()->id;
+        $comments->post_id = $request->id;
         $comments->save();
 
-        return redirect()->action("PostsController@edit")->with('message','保存が完了しました。');
+        return redirect()->back()->with('message','保存が完了しました。');
     }
 }

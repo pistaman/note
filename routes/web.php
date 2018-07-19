@@ -27,7 +27,7 @@ Route::get('edit/{id}', 'PostsController@edit');
 Route::post('edit/{id}', 'PostsController@update');
 
 //記事削除
-Route::delete('/destroy/{id}','PostsController@destroy');
+Route::delete('destroy/{id}','PostsController@destroy');
 
 //コメント機能
-Route::post('/edit/{id}/comment','CommentsController@store');
+Route::post('edit/{id}/comment','CommentsController@store');
