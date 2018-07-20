@@ -17,7 +17,7 @@
     @else
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
         <script src="{{ secure_asset('js/list.js') }}" defer></script>
-    @end
+    @endif
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/register.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/post.css') }}" rel="stylesheet">
-    @end
+    @endif
 </head>
 <body>
   <header class="global__header">
