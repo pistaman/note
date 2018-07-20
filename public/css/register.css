@@ -1,1 +1,342 @@
-html{line-height:1;overflow-y:scroll}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}a,abbr,acronym,address,applet,article,aside,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,menu,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{outline:0;font-weight:400;font-variant:normal;background:0 0}body{cursor:default;line-height:1;text-rendering:optimizelegibility}table,td,th,tr{border:0}ins{text-decoration:none}del{text-decoration:line-through}button{outline:0;border:0}strong{font-weight:700}:focus{outline:0}body{background-color:rgba(0,0,0,.02);color:#555}a{text-decoration:none}.register_container{max-width:1200px;width:400px;height:400px;background-color:#fff;border:1px solid #dadada;border-radius:4px;padding:50px;margin:100px auto;text-align:center}.card-header{font-weight:700;font-size:1.8em;border-bottom:1px solid #ebebeb;padding-bottom:10px}.col-md-6{margin-top:30px}.col-md-6 input{min-width:13.375em;font-size:14px;border:1px solid #c8c8c8;border-radius:4px;padding:1em 1.3em}.col-md-6 input:focus{-webkit-box-shadow:0 0 6px 1px #2076c4;box-shadow:0 0 6px 1px #2076c4}.col-md-6 button{color:#fff;background-color:#5da797;font-size:14px;border-radius:4px;padding:14px 110px;-webkit-box-shadow:2px 2px 4px #dadada;box-shadow:2px 2px 4px #dadada;cursor:pointer}.col-md-6 button:hover{-webkit-box-shadow:none;box-shadow:none}.col-md-6 button:focus{-webkit-box-shadow:0 0 6px 1px #2076c4;box-shadow:0 0 6px 1px #2076c4}.col-md-6.offset-md-4{margin:10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.col-md-6.offset-md-4 .btn-link{color:#555;margin-top:20px;text-decoration:none}.col-md-6.offset-md-4 .btn-link:hover{color:#5da797}
+html {
+  line-height: 1;
+  overflow-y: scroll;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html,
+body,
+div,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  outline: 0;
+  font-weight: 400;
+  font-variant: normal;
+  background: 0 0;
+}
+
+body {
+  cursor: default;
+  line-height: 1;
+  text-rendering: optimizelegibility;
+}
+
+table,
+tr,
+th,
+td {
+  border: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+.register_container {
+  max-width: 1200px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 50px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.8em;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.col-md-6 {
+  margin-top: 30px;
+}
+
+.col-md-6 input {
+  min-width: 13.375em;
+  font-size: 14px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 1em 1.3em;
+}
+
+.col-md-6 input:focus {
+  -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
+          box-shadow: 0px 0px 6px 1px #2076c4;
+}
+
+.col-md-6 button {
+  color: #fff;
+  background-color: #5DA797;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 14px 110px;
+  -webkit-box-shadow: 2px 2px 4px #dadada;
+          box-shadow: 2px 2px 4px #dadada;
+  cursor: pointer;
+}
+
+.col-md-6 button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.col-md-6 button:focus {
+  -webkit-box-shadow: 0px 0px 6px 1px #2076c4;
+          box-shadow: 0px 0px 6px 1px #2076c4;
+}
+
+.col-md-6.offset-md-4 {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col-md-6.offset-md-4 .btn-link {
+  color: #555;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.col-md-6.offset-md-4 .btn-link:hover {
+  color: #5DA797;
+}
+
