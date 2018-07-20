@@ -452,6 +452,10 @@ a {
   color: #555;
 }
 
+.top__button--delete {
+  font-size: 14px;
+}
+
 #session__message {
   width: 50%;
   background-color: #dff0d8;

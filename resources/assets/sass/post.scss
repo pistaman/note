@@ -75,6 +75,7 @@
     color: $base-black;
     font-size: 14px;
     margin: 10px;
+    margin-bottom: 0;
     padding: 4px 8px;
     border: 0.2px solid rgba(0,0,0,0.4);
     border-radius: 4px;
@@ -101,8 +102,8 @@
   &-body {
     display: flex;
   }
-  &-comment {
-
+  &-content {
+    text-align: end;
   }
   &-post {
     width: 70%;
@@ -111,6 +112,7 @@
     text-align: end;
   }
   &-item {
+    margin-bottom: 20px;
     & p {
       text-align: end;
     }

@@ -27,6 +27,12 @@ class CommentsController extends Controller
         $comments->post_id = $request->id;
         $comments->save();
 
-        return redirect()->back()->with('message','保存が完了しました。');
+        return redirect()->back();
+    }
+
+    public function destroy($id) {
+         $comment = Comment::findOrFail($id);
+         $comment->delete();
+         return redirect()->back();
     }
 }

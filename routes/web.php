@@ -31,3 +31,4 @@ Route::delete('destroy/{id}','PostsController@destroy');
 
 //コメント機能
 Route::post('edit/{id}/comment','CommentsController@store');
+Route::delete('destroy/{id}','CommentsController@destroy');

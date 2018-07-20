@@ -4,7 +4,7 @@
     <input class="post__edit--title" type="text" name="title" placeholder="タイトル" value="{{ old('title') }}">
   </div>
   <div class="form-group">
-    <textarea class="post__edit--content" type="text" name="content" rows="3">{{ old('content') }}</textarea>
+    <textarea :value="input" @input="update" class="post__edit--content" type="text" name="content" rows="3">{{ old('content') }}</textarea>
   </div>
   <div class="form-group-submit">
     <button class="post__edit--submit" type="submit" name="btn btn-primary">保存</button>

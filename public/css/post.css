@@ -430,6 +430,7 @@ a {
   color: #555;
   font-size: 14px;
   margin: 10px;
+  margin-bottom: 0;
   padding: 4px 8px;
   border: 0.2px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -463,12 +464,20 @@ a {
   display: flex;
 }
 
+.form-group-content {
+  text-align: end;
+}
+
 .form-group-post {
   width: 70%;
 }
 
 .form-group-submit {
   text-align: end;
+}
+
+.form-group-item {
+  margin-bottom: 20px;
 }
 
 .form-group-item p {
