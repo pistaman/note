@@ -4,6 +4,9 @@
 
 <div class="post__container">
   @include('posts.form_draft')
+  <div class="hoge" v-html="compiledMarkdown">
+
+  </div>
 </div>
 
 

@@ -13,14 +13,24 @@
 
 import Vue from 'vue'
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '.main__container',
+    el: '.post__container',
     data: {
-      message: 'hoge'
+      input: '# hello'
+    },
+    computed: {
+      compiledMarkdown: function() {
+        return marked(this.input, { sanitize:true })
+      }
+    },
+    methods: {
+      update: _.debounce(function(e) {
+        this.input = e.target.value
+      }, 300)
     },
     components: {
-      app:ExampleComponent,
+      // app:ExampleComponent,
     }
 })
