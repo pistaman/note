@@ -87,8 +87,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
-  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -401,6 +399,7 @@ a {
 .top__list h3 {
   color: #555;
   font-weight: bold;
+  font-size: 16px;
   margin-left: 10px;
 }
 

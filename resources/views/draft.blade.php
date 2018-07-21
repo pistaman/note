@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="post__container">
+<div class="post__container" id="post__markdown">
   @include('posts.form_draft')
-  <div class="hoge" v-html="compiledMarkdown">
+  <div class="post__preview" v-html="compiledMarkdown">
 
   </div>
 </div>
