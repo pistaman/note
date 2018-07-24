@@ -26,9 +26,9 @@ class PostsController extends Controller
         return view('home',compact('posts'));
     }
     public function destroy($id) {
-         $post = Post::findOrFail($id);
-         $post->delete();
-         return redirect('/')->with('message','削除しました。');
+        $post = Post::findOrFail($id);
+        $post->delete();
+        return redirect('/')->with('message','削除しました。');
     }
 
     public function create()
@@ -67,14 +67,14 @@ class PostsController extends Controller
     public function update (Request $request,$id)
     {
         $message = [
-          'title.required' => 'タイトルは必須です。','content.required' => 'コンテンツは必須です。'
+            'title.required' => 'タイトルは必須です。','content.required' => 'コンテンツは必須です。'
         ];
         $validator = Validator::make($request->all(),[
-          'title' => 'required',
-          'content' => 'required'
+            'title' => 'required',
+            'content' => 'required'
         ], $message);
         if ($validator->fails()) {
-         return redirect()->back()->withErrors($validator)->withInput();
+            return redirect()->back()->withErrors($validator)->withInput();
         }
         $user_id = \Auth::id();
         $post = Post::findOrFail($request->id);
