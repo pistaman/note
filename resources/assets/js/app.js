@@ -18,7 +18,7 @@ import Vue from 'vue'
 const app = new Vue({
     el: '#post__markdown',
     data: {
-      input: '# hello'
+      input: '```<div>sample</div>```'
     },
     computed: {
       compiledMarkdown: function() {
@@ -34,3 +34,9 @@ const app = new Vue({
       // app:ExampleComponent,
     }
 })
+marked.setOptions({
+  lnagPrefix: '',
+  highlight: function(code, lang) {
+    return hljs.highlightAuto(code, [lang]).value;
+  }
+});

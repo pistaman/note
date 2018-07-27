@@ -27,6 +27,10 @@
         <link href="{{ secure_asset('css/register.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/post.css') }}" rel="stylesheet">
     @endif
+    <link data-require="highlight.js@*" data-semver="0.7.3" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/solarized_dark.min.css" />
+    <link data-require="highlight.js@*" data-semver="0.7.3" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/github.min.css" />
+    <link data-require="highlight.js@*" data-semver="0.7.3" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/default.min.css" />
+
 </head>
 <body>
   <header class="global__header">
@@ -80,6 +84,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+<script data-require="highlight.js@*" data-semver="0.7.3" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
 <script src=" {{ mix('js/app.js') }} "></script>
 @if(app('env') == 'local')
     <script src="{{ asset('js/list.js') }}" defer></script>

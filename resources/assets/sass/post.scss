@@ -26,7 +26,7 @@
     &--content {
       display: none;
       width: 100%;
-      min-height: 620px;
+      min-height: 542px;
       color: #555;
       background-color: #fff;
       font-size: 12px;
@@ -35,6 +35,18 @@
       padding: 12px 8px 4px 8px;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 0 4px 4px 4px;
+      & pre {
+        display: block;
+        margin: 8px auto;
+        line-height: 20px;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        line-height: 100%;
+        font: 10.5px/1.231 arial,helvetica,clean,sans-serif !important;
+      }
     }
   }
   &__tab {
@@ -42,7 +54,7 @@
     &--toggle {
       width: 100px;
       color: #555;
-      background-color: #fff;
+      background-color: #eee;
       font-size: 14px;
       padding: 12px 8px;
       border: 1px solid rgba(0, 0, 0, 0.2);
@@ -56,6 +68,7 @@
         margin-right: 6px;
       }
       &.active {
+        background-color: #fff;
         border-bottom: none;
         &::after {
           content: '';
@@ -72,13 +85,14 @@
   &__edit {
     &--title {
       width: 100%;
-      height: 2em;
+      height: 2.5em;
       color: $base-black;
       font-size: 14px;
       margin: 10px 0;
       padding: 4px 8px;
       border: 0.2px solid rgba(0,0,0,0.4);
       border-radius: 4px;
+      box-sizing: border-box;
       box-shadow:0px 0px 2px 1px #bcc3c9 inset;
       &:focus {
         box-shadow:0px 0px 6px 1px #2076c4;
@@ -91,6 +105,7 @@
       font-size: 14px;
       margin: 10px 0;
       padding: 4px 8px;
+      box-sizing: border-box;
       border: 0.2px solid rgba(0,0,0,0.4);
       border-radius: 4px;
       box-shadow:0px 0px 2px 1px #bcc3c9 inset;

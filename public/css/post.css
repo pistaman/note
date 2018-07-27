@@ -372,7 +372,7 @@ a {
 .post__side--content {
   display: none;
   width: 100%;
-  min-height: 620px;
+  min-height: 542px;
   color: #555;
   background-color: #fff;
   font-size: 12px;
@@ -381,6 +381,19 @@ a {
   padding: 12px 8px 4px 8px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0 4px 4px 4px;
+}
+
+.post__side--content pre {
+  display: block;
+  margin: 8px auto;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  line-height: 100%;
+  font: 10.5px/1.231 arial,helvetica,clean,sans-serif !important;
 }
 
 .post__tab {
@@ -392,7 +405,7 @@ a {
 .post__tab--toggle {
   width: 100px;
   color: #555;
-  background-color: #fff;
+  background-color: #eee;
   font-size: 14px;
   padding: 12px 8px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -415,6 +428,7 @@ a {
 }
 
 .post__tab--toggle.active {
+  background-color: #fff;
   border-bottom: none;
 }
 
@@ -430,13 +444,15 @@ a {
 
 .post__edit--title {
   width: 100%;
-  height: 2em;
+  height: 2.5em;
   color: #555;
   font-size: 14px;
   margin: 10px 0;
   padding: 4px 8px;
   border: 0.2px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
           box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
 }
@@ -453,6 +469,8 @@ a {
   font-size: 14px;
   margin: 10px 0;
   padding: 4px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0.2px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 2px 1px #bcc3c9 inset;
