@@ -18,7 +18,7 @@ import Vue from 'vue'
 const app = new Vue({
     el: '#post__markdown',
     data: {
-      input: '```<div>sample</div>```'
+      input: '```'+"\n"+'<div>sample</div>'+"\n"+'```'
     },
     computed: {
       compiledMarkdown: function() {
