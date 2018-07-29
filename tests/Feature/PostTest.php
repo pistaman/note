@@ -5,8 +5,11 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class PostTest extends TestCase
 {
+    use DatabaseMigrations;
+    use DatabaseTransactions;
+
     /**
      * A basic test example.
      *
